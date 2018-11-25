@@ -1,8 +1,16 @@
 # Arlement
 
-> Unoptinonated, extendable DOM selector engine
+> Extendable DOM selector engine
 
 Arlement takes a CSS Selector string and gives you an array of HTML elements. That's it.
+
+## Install
+
+To install Arlement you will need [Node.js](https://nodejs.org/):
+
+```
+npm install arlement --save
+```
 
 ## Usage
 
