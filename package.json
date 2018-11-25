@@ -1,7 +1,7 @@
 {
   "name": "arlement",
-  "version": "0.1.0",
-  "description": "Unoptinonated, extendable DOM selector engine",
+  "version": "0.1.1",
+  "description": "Extendable DOM selector engine",
   "keywords": [
     "arlement",
     "selector"
@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/lokkasio/arlement/issues"
   },
-  "license": "UNLICENSE",
+  "license": "Unlicense",
   "author": "Lukas Mestel",
   "files": [
     "arlement.*js"

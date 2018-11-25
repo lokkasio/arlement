@@ -12,14 +12,30 @@ export default class extends Function {
               : []
 
         super(...Array.from(elements))
+      }
 
-        for (const fn in extensions) {
-          if (!this[fn]) {
-            Object.defineProperty(this, fn, { value: extensions[fn] })
-          } else {
-            console.warn(`"${fn}" already exists in Arlement.`)
-          }
-        }
+      concat () {
+        return new Arlement(super.concat(...arguments))
+      }
+
+      filter () {
+        return new Arlement(super.filter(...arguments))
+      }
+
+      map () {
+        return new Arlement(super.map(...arguments))
+      }
+
+      slice () {
+        return new Arlement(super.slice(...arguments))
+      }
+    }
+
+    for (const fn in extensions) {
+      if (!Arlement.prototype[fn]) {
+        Object.defineProperty(Arlement.prototype, fn, { value: extensions[fn] })
+      } else {
+        console.warn(`"${fn}" already exists in Arlement.`)
       }
     }
 

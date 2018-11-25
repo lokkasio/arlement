@@ -97,9 +97,6 @@ QUnit.module('extendibility', () => {
   })
 
   QUnit.test('existing array methods cannot be overwritten', t => {
-    fixture`
-      <div id="container"></div>
-    `
     $ = new Arlement({
       indexOf: () => 'foo'
     })
