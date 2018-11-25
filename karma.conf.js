@@ -17,7 +17,7 @@ const baseConfig = {
     }
   },
 
-  reporters: ['progress'],
+  reporters: ['dots'],
 
   autoWatch: false,
 
@@ -70,7 +70,7 @@ const customLaunchers = {
 }
 
 const sauceLabsConfig = {
-  reporters: ['progress', 'saucelabs'],
+  reporters: ['dots', 'saucelabs'],
 
   browsers: Object.keys(customLaunchers),
 
