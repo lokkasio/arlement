@@ -128,3 +128,11 @@ import $ from './globals.js'
 
 $('h1').addClass('heading')
 ```
+
+## Tests
+
+Tests are written with [QUnit](https://qunitjs.com/). You can see the test results on [Travis CI](https://travis-ci.org/lokkasio/arlement) or in your target browser on https://lokkasio.github.io/arlement/.
+
+## Contribution
+
+Any kind of feedback or contribution (bug reports, feature requests, ideas, questions, pr's, …) is wellcome!
