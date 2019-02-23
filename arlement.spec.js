@@ -96,6 +96,17 @@ QUnit.module('extendibility', () => {
     t.equal(typeof $().bar, 'function')
   })
 
+  QUnit.test('extensions are available on existing array methods', t => {
+    $ = new Arlement({
+      foo: () => {}
+    })
+
+    t.equal(typeof $().concat($()).foo, 'function')
+    t.equal(typeof $().filter(() => true).foo, 'function')
+    t.equal(typeof $().map(e => e).foo, 'function')
+    t.equal(typeof $().slice().foo, 'function')
+  })
+
   QUnit.test('existing array methods cannot be overwritten', t => {
     $ = new Arlement({
       indexOf: () => 'foo'
