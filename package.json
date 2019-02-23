@@ -19,14 +19,13 @@
   "repository": "lokkasio/arlement",
   "scripts": {
     "test": "karma start",
+    "pretest": "rollup --format=umd --file=test.js -- arlement.spec.js",
     "lint": "standard"
   },
   "devDependencies": {
     "karma": "^4.0.0",
     "karma-firefox-launcher": "^1.1.0",
     "karma-qunit": "^2.1.0",
-    "karma-rollup-preprocessor": "^7.0.0",
-    "karma-sauce-launcher": "^2.0.2",
     "qunit": "^2.9.2",
     "rollup": "^1.2.2",
     "standard": "^12.0.1"

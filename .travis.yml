@@ -3,5 +3,3 @@ node_js:
   - "8"
 sudo: false
 cache: npm
-addons:
-  sauce_connect: true
