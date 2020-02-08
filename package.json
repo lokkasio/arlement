@@ -20,20 +20,31 @@
   "scripts": {
     "test": "karma start",
     "pretest": "rollup --format=umd --file=test.js -- arlement.spec.js",
-    "lint": "standard"
+    "lint": "standard",
+    "release": "standard-version"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.1",
     "karma": "^4.0.0",
     "karma-firefox-launcher": "^1.1.0",
     "karma-qunit": "^2.1.0",
     "qunit": "^2.9.2",
     "rollup": "^1.2.2",
-    "standard": "^12.0.1"
+    "standard": "^12.0.1",
+    "standard-version": "^7.1.0"
   },
   "standard": {
     "env": {
       "browser": true,
       "qunit": true
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
