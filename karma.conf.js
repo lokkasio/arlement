@@ -15,11 +15,11 @@ module.exports = function (config) {
     browsers: ['FirefoxHeadless'],
 
     customLaunchers: {
-      'FirefoxHeadless': {
+      FirefoxHeadless: {
         base: 'Firefox',
         flags: [
-          '-headless',
-        ],
+          '-headless'
+        ]
       }
     },
 
