@@ -1,7 +1,7 @@
 (function (factory) {
   typeof define === 'function' && define.amd ? define(factory) :
   factory();
-}(function () { 'use strict';
+}((function () { 'use strict';
 
   class Arlement extends Function {
     constructor (extensions) {
@@ -166,4 +166,4 @@
     });
   });
 
-}));
+})));
